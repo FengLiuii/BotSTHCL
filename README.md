@@ -27,11 +27,11 @@ Other steps are the same as Twibot-20.
 ### Train and Test
 ```python
 # For Cresci-2015, run the following commands
-python main.py --dataset_name "Cresci-2015" --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
+python main.py --dataset_name "Cresci-2015" --seed 3047 --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
 
 # For Twibot-20, run the following commands
-python main.py --dataset_name "Twibot-20" --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
+python main.py --dataset_name "Twibot-20" --seed 3047 --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
 
 # For Twibot-22, run the following commands
-python main.py --dataset_name "Twibot-20" --batch_size 256 --hidden_dim 64 --weight_decay 5e-2 --structural_learning_rate 5e-4 --temporal_learning_rate 5e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 100  --early_stop --patience 5
+python main.py --dataset_name "Twibot-22" --seed 3047 --batch_size 256 --hidden_dim 64 --weight_decay 5e-2 --structural_learning_rate 5e-4 --temporal_learning_rate 5e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 100  --early_stop --patience 5
 ```
