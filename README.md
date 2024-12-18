@@ -8,7 +8,7 @@ Implementation for the paper "A Community-Aware Spatio-temporal Hypergraph Contr
 ## Quick Start
 
 ### Dataset Preparation
-The original datasets are available at [Twibot-20](https://github.com/BunsenFeng/TwiBot-20) and [Twibot-22](https://github.com/LuoUndergradXJTU/TwiBot-22). 
+The original datasets are available at [Cresci-2015](http://mib.projects.iit.cnr.it/dataset.html), [Twibot-20](https://github.com/BunsenFeng/TwiBot-20) and [Twibot-22](https://github.com/LuoUndergradXJTU/TwiBot-22). 
 
 For Twibot-20:
 
@@ -26,6 +26,9 @@ Other steps are the same as Twibot-20.
 
 ### Train and Test
 ```python
+# For Cresci-2015, run the following commands
+python main.py --dataset_name "Cresci-2015" --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
+
 # For Twibot-20, run the following commands
 python main.py --dataset_name "Twibot-20" --batch_size 64 --hidden_dim 128 --weight_decay 1e-2 --structural_learning_rate 1e-4 --temporal_learning_rate 1e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 50  --early_stop --patience 5
 
