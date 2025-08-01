@@ -84,7 +84,7 @@ class HyperGCL_Louvain_P(nn.Module):
         h_neg = F.normalize(h_neg, dim=-1)
         
         # Cosine similarity
-        positive_similarity = F.cosine_similarity(h_pos, h_pos, dim=-1) / temperature
+        positive_similarity = F.cosine_similarity(h_pos, h_neg, dim=-1) / temperature
         negative_similarity = F.cosine_similarity(h_pos.unsqueeze(1), h_neg, dim=-1) / temperature
         
         # Softmax-based contrastive loss
@@ -613,7 +613,7 @@ class HyperGCL_Louvain_P_DA(nn.Module):
         h_neg = F.normalize(h_neg, dim=-1)
         
         # Cosine similarity
-        positive_similarity = F.cosine_similarity(h_pos, h_pos, dim=-1) / temperature
+        positive_similarity = F.cosine_similarity(h_pos, h_neg, dim=-1) / temperature
         negative_similarity = F.cosine_similarity(h_pos.unsqueeze(1), h_neg, dim=-1) / temperature
         
         # Softmax-based contrastive loss
