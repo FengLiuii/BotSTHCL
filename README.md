@@ -35,3 +35,8 @@ python main.py --dataset_name "Twibot-20" --seed 3047 --batch_size 64 --hidden_d
 # For Twibot-22, run the following commands
 python main.py --dataset_name "Twibot-22" --seed 3047 --batch_size 256 --hidden_dim 64 --weight_decay 5e-2 --structural_learning_rate 5e-4 --temporal_learning_rate 5e-5  --aug_type hyperedge --aug_ratio 0.1 --epoch 100  --early_stop --patience 5
 ```
+
+
+```cite
+
+
