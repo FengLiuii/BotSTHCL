@@ -38,5 +38,16 @@ python main.py --dataset_name "Twibot-22" --seed 3047 --batch_size 256 --hidden_
 
 
 ```cite
+@ARTICLE{11269897,
+  author={Liu, Feng and Li, Zhenyu and Ma, Rui},
+  journal={IEEE Transactions on Information Forensics and Security}, 
+  title={A Community-Aware Spatio-Temporal Hypergraph Contrastive Learning Method for Social Bot Detection}, 
+  year={2025},
+  volume={20},
+  number={},
+  pages={12581-12595},
+  doi={10.1109/TIFS.2025.3637684}}
+
+```
 
 
