@@ -10,6 +10,8 @@ Implementation for the paper "A Community-Aware Spatio-temporal Hypergraph Contr
 ### Dataset Preparation
 The original datasets are available at [Cresci-2015](http://mib.projects.iit.cnr.it/dataset.html), [Twibot-20](https://github.com/BunsenFeng/TwiBot-20) and [Twibot-22](https://github.com/LuoUndergradXJTU/TwiBot-22). 
 
+[Twibot-20 Data Preprocessing](https://github.com/FengLiuii/BotSTIP/blob/main/preprocess_twibot20.py)
+[Twibot-22 Data Preprocessing](https://github.com/FengLiuii/BotSTIP/blob/main/preprocess_twibot22.py)
 For Twibot-20:
 
 1. Put `node.json` in the `\raw` folder. `node.json` is provided in the original dataset.
