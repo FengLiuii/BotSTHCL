@@ -14,6 +14,7 @@ The original datasets are available at [Cresci-2015](http://mib.projects.iit.cnr
 
 [Twibot-22 Data Preprocessing](https://github.com/FengLiuii/BotSTIP/blob/main/preprocess_twibot22.py)
 
+For data preprocessing scripts and ``utils'' functions, please refer to the [BotSTIP](https://github.com/FengLiuii/BotSTIP) repository.
 
 For Twibot-20:
 
